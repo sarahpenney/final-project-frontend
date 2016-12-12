@@ -1,2 +1,2 @@
-
+body{background-color:#000}.selected-image{border:15px solid red}.selected-image-info{color:#fff;display:none;border:2px solid #00f}.selected-image-info.active{display:block}.bioImages{position:fixed;top:0;left:0}
 /*# sourceMappingURL=style.css.map */

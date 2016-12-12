@@ -1,0 +1,49 @@
+<h1>ORGANISMS</h1>
+
+<!-- <section>
+  <ul>
+    <li ng-repeat="organism in organismsIndex.all">
+      <div >
+        <img ng-src='{{ organism.image }}' alt="Image of organism" class="images" />
+
+
+      <div class="">
+        {{ organism.id }}
+        <h2>{{ organism.name }}</h2>
+        <h4>{{ organism.phylum }}</h4>
+        <h4>{{ organism.order }}</h4>
+        <h4>{{ organism.family }}</h4>
+        <h4>{{ organism.genus }}</h4>
+        <p>{{ organism.body }}</p>
+      </div>
+
+    </li>
+  </ul>
+</section> -->
+
+<!-- ng-click="image.selected = !image.selected" -->
+
+<section>
+<!-- <body ng-controller="MainCtrl"> -->
+  <div class="bioImages" ng-repeat="organism in organismsIndex.all">
+    <img ng-src='{{ organism.image }}' alt="Image of organism" class="images"
+    ng-mouseover="organismsIndex.toggleInfo(organism)"
+    ng-mouseleave="organismsIndex.infoVisible = false"
+    class="img-responsive"
+    ng-class="{ 'selected-image': image.selected }"
+    style="max-height: 120px;" alt="" title="">
+
+  </div>
+
+
+<!-- <div class="selected-image" ng-class="{ 'selected-image': image.selected }"> -->
+<div class="selected-image-info" ng-class="{'active': organismsIndex.infoVisible}">
+  <h2>{{ organismsIndex.organism.name }}</h2>
+  <h4>{{ organismsIndex.organism.phylum }}</h4>
+  <h4>{{ organismsIndex.organism.order }}</h4>
+  <h4>{{ organismsIndex.organism.family }}</h4>
+  <h4>{{ organismsIndex.organism.genus }}</h4>
+  <p>{{ organismsIndex.organism.body }}</p>
+</div>
+
+</section>

@@ -1,0 +1,27 @@
+body {
+  background-color: black
+}
+
+
+.selected-image {
+  border: 15px solid red;
+}
+
+.selected-image-info {
+  color: white;
+  display: none;
+  border: 2px solid blue;
+  &.active {
+    display: block;
+  }
+}
+
+
+
+.bioImages {
+  // display: inline;
+  // width: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

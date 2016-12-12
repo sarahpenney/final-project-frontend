@@ -1,5 +1,5 @@
 angular.module('finalProject', ['ngResource', 'ui.router', 'satellizer'])
-  .constant('API_URL', 'https://organisms-api.herokuapp.com/api')
+  .constant('API_URL', 'http://localhost:3000/api')
   .config(Auth);
 
 Auth.$inject = ['$authProvider', 'API_URL'];
