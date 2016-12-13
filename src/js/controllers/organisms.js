@@ -15,14 +15,22 @@ function OrganismsIndexController(Organism) {
     //   organismsIndex.infoVisible = false;
     //   organismsIndex.organism = null;
     // } else {
-      organismsIndex.infoVisible = true;
-      organismsIndex.organism = organism;
+    organismsIndex.infoVisible = true;
+    organismsIndex.organism = organism;
     // }
   }
 
   organismsIndex.toggleInfo = toggleInfo;
 
 }
+
+// 
+// function goToPapers() {
+//   $state.go('papersIndex');
+// };
+//
+
+
 
 OrganismsShowController.$inject = ['Organism', '$state', '$auth'];
 function OrganismsShowController(Organism, $state, $auth) {

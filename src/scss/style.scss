@@ -1,5 +1,22 @@
 body {
-  background-color: black
+  background-color: black;
+  color: white;
+  // font-family: 'Cormorant Infant', serif;
+}
+
+.backgroundImg {
+  margin-top: -200px;
+  margin-left: 100px;
+  position: absolute;
+  position: fixed;
+}
+
+
+.toggleCssBar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin: 0;
 }
 
 
@@ -10,9 +27,12 @@ body {
 .selected-image-info {
   color: white;
   display: none;
-  border: 2px solid blue;
+  text-align: right;
   &.active {
     display: block;
+    transition: all linear 0.5s;
+    width: 300px;
+    position: absolute;
   }
 }
 
@@ -24,4 +44,327 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: all linear 0.3s;
+    &:hover {
+        opacity:1.0;
+    }
+}
+
+
+
+#Firefly {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 153px;
+  left: 406px;
+  height: 75px;
+}
+
+
+#Click-Beetle {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 523px;
+  left: 629px;
+  height: 80px;
+}
+
+
+#Glowworm {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 305px;
+  left: 577px;
+  height: 58px;
+}
+
+
+#Railroad-Worm {
+  position: absolute;
+  left: 772px;
+  top: 183px;
+  height: 83px;
+}
+
+
+#Motyxia {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 603px;
+  left: 928px;
+  height: 42px;
+}
+
+
+#Quantula-striata {
+  position: absolute;
+  top: 550px;
+  left: 822px;
+  height: 83px;
+}
+
+
+#Annelid {
+  position: absolute;
+  top: 344px;
+  left: 430px;
+  height: 120px;
+}
+
+
+#Anglerfish {
+  position: absolute;
+    top: 422px;
+    left: 301px;
+    height: 105px;
+}
+
+
+#Cookiecutter-shark {
+  position: absolute;
+  top: 333px;
+  left: 613px;
+  height: 62px;
+}
+
+
+#Catshark {
+  position: absolute;
+  top: 506px;
+  left: 740px;
+  height: 56px;
+}
+
+
+#Flashlight-fish {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 353px;
+  left: 496px;
+  height: 80px;
+}
+
+
+#Gulper-eel {
+  position: absolute;
+      /* opacity: 0.3; */
+      top: 138px;
+      left: 615px;
+      height: 91px;
+}
+
+
+#Lanternfish {
+  left: 606px;
+  top: 381px;
+  height: 91px;
+  position: absolute;
+}
+
+#Marine-hatchetfish {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 368px;
+  left: 787px;
+  height: 73px;
+}
+
+#Midshipman-fish {
+  position: absolute;
+    /* opacity: 0.3; */
+    top: 287px;
+    left: 499px;
+    height: 75px;
+}
+
+
+#Pinecone-fish {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 379px;
+  left: 262px;
+  height: 83px;
+}
+
+
+#Viperfish {
+  position: absolute;
+  top: 215px;
+  left: 631px;
+  /* opacity: 0.3; */
+  height: 62px;
+}
+
+
+#Black-dragonfish {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 485px;
+  left: 415px;
+  height: 120px;
+}
+
+
+#Cnidaria {
+  position: absolute;
+  /* opacity: 0.3; */
+  left: 758px;
+  top: 266px;
+  height: 92px;
+}
+
+
+#Sea-Pen {
+  position: absolute;
+    /* opacity: 0.3; */
+    top: 235px;
+    left: 885px;
+    height: 124px;
+}
+
+
+#Coral {
+  position: absolute;
+    /* opacity: 0.3; */
+    top: 491px;
+    left: 213px;
+    height: 90px;
+}
+
+
+#Jellyfish {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 430px;
+  left: 491px;
+  height: 140px;
+}
+
+
+#Comb-Jellies {
+  top: 517px;
+  left: 270px;
+  height: 120px;
+  position: absolute;
+}
+
+
+#Echinoderm {
+  position: absolute;
+    /* opacity: 0.3; */
+    top: 181px;
+    left: 497px;
+    height: 115px;
+}
+
+#Crustacean {
+  position: absolute;
+      /* opacity: 0.3; */
+      height: 85px;
+      top: 99px;
+      left: 524px;
+}
+
+
+#Arrow-worms {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 411px;
+  left: 207px;
+  height: 95px;
+}
+
+
+#Clams {
+  position: absolute;
+    /* opacity: 0.3; */
+    top: 452px;
+    left: 654px;
+    height: 74px;
+}
+
+
+#Sea-Slugs {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 566px;
+  left: 592px;
+  height: 91px;
+}
+
+
+#Octopus {
+  top: 211px;
+  left: 348px;
+  height: 170px;
+  position: absolute;
+}
+
+
+#Vampire-Squid {
+  left: 231px;
+  top: 255px;
+  height: 127px;
+  position: absolute;
+}
+
+
+#Bobtail-squid {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 576px;
+  left: 451px;
+  height: 88px;
+}
+
+
+#Colossal-Squid {
+  position: absolute;
+/* opacity: 0.3; */
+top: 423px;
+left: 842px;
+height: 88px;
+}
+
+
+#sparkling-enope-squid {
+  left: 916px;
+  top: 520px;
+  /* opacity: 0.4; */
+  height: 88px;
+  position: absolute;
+}
+
+
+#Fungi {
+  position: absolute;
+  /* opacity: 0.3; */
+  top: 421px;
+  left: 740px;
+  height: 80px;
+}
+
+
+#Vibrionaceae {
+  position: absolute;
+  top: 566px;
+  left: 732px;
+  height: 70px;
+}
+
+
+#Shewanella {
+  position: absolute;
+  left: 863px;
+  top: 353px;
+  height: 70px;
+}
+
+
+#Protist {
+  left: 678px;
+  height: 60px;
+  top: 261px;
+  position: absolute;
 }
