@@ -39,6 +39,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/organismsShow.html',
       controller: 'OrganismsShowController as organismsShow'
     })
+    .state('papersCreate', {
+      url: '/papers/new',
+      templateUrl: 'templates/papersCreate.html',
+      controller: 'PapersCreateController as papersCreate'
+    })
     .state('papersShow', {
       url: '/papers/:id',
       templateUrl: 'templates/papersShow.html',
@@ -50,7 +55,7 @@ function Router($stateProvider, $urlRouterProvider) {
       controller: 'PapersEditController as papersEdit'
     })
     .state('papersIndex', {
-      url: '/papers',
+      url: '/papers?organismId',
       templateUrl: 'templates/papersIndex.html',
       controller: 'PapersIndexController as papersIndex'
     });

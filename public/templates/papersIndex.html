@@ -1,10 +1,18 @@
-<h1>Papers Index</h1>
+<div class="container">
+  <h1 class="papersIndexTitle">Papers Index</h1>
 
-<section>
-  <ul>
-    <li ng-repeat="paper in papersIndex.all">
-      <h2>{{ paper.title }}</h2>
-      <p>{{ paper.body }}</p>
-    </li>
-  </ul>
-</section>
+
+  <section>
+    <ul class="splitList">
+      <li ng-repeat="paper in papersIndex.all">
+        <div>
+          <h2>{{ paper.title }}</h2>
+          <p ui-sref="papersShow({id: paper.id })" class="readMore">Read more</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+<a ui-sref="papersCreate" class="createPaperLink">Create Paper</a>
+<div class="underline"></div>

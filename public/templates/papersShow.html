@@ -1,1 +1,8 @@
-<h1>Paper</h1>
+<h5>Paper Title:</h5> <h3><strong>{{ papersShow.paper.title }}</strong></h3>
+
+<p>{{ papersShow.paper.body }}</p>
+
+<p>Author: <strong>{{ papersShow.paper.user.username }}</strong></p>
+
+<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ui-sref="papersEdit({id: papersShow.paper.id })">Edit Paper</button>
+<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ng-click="papersShow.deletePaper()">Delete Paper</button>

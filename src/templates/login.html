@@ -1,14 +1,18 @@
 <section>
-  <form novalidate ng-submit="login.submit()">
+
+  <form novalidate ng-submit="login.submit()" class="logInForm">
     <div>
-      <label>Email</label>
+      <label class="inputLabel"></label>
       <input type="email" placeholder="Email" ng-model="login.credentials.email">
     </div>
     <div>
-      <label>Password</label>
+      <label class="inputLabel"></label>
       <input type="password" placeholder="Password" ng-model="login.credentials.password">
     </div>
 
-    <button>Login</button>
+    <button class="buttonStyle">Enter</button>
   </form>
+  <img src="https://d13yacurqjgara.cloudfront.net/users/280033/screenshots/1880055/attachments/318673/ripple_glow.gif" class="gif" alt="">
+
+
 </section>

@@ -24,12 +24,6 @@ function OrganismsIndexController(Organism) {
 
 }
 
-// 
-// function goToPapers() {
-//   $state.go('papersIndex');
-// };
-//
-
 
 
 OrganismsShowController.$inject = ['Organism', '$state', '$auth'];

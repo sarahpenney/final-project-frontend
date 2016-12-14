@@ -1,1 +1,12 @@
 <h1>Edit Paper</h1>
+
+<form ng-submit="papersEdit.update()">
+  <label>Title
+    <input ng-model="papersEdit.paper.title">
+  </label>
+
+  <label>Body
+    <input ng-model="papersEdit.paper.body">
+  </label>
+  <button type='submit'>Update</button>
+</form>

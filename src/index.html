@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/vendor.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
   <body ng-controller="MainController as main">
-    <div class="toggleCssBar"></div>
 
     <nav>
       <ul>
-        <li><a ui-sref="usersIndex" ui-sref-active="active">Users</a></li>
+        <!-- <li><a ui-sref="usersIndex" ui-sref-active="active">Users</a></li> -->
         <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="usersNew" ui-sref-active="active">New User</a></li> -->
         <li ng-if="!main.isLoggedIn()"><a ui-sref="register" ui-sref-active="active">Register</a></li>
         <li ng-if="!main.isLoggedIn()"><a ui-sref="login" ui-sref-active="active">Login</a></li>
         <li ng-if="main.isLoggedIn()"><a ui-sref="organismsIndex" ui-sref-active="active">Organisms</a></li>
         <li ng-if="main.isLoggedIn()"><a ui-sref="papersIndex" ui-sref-active="active">Papers Index</a></li>
-        <li ng-if="main.isLoggedIn()"><a ui-sref="papersShow" ui-sref-active="active">Paper Show</a></li>
-        <li ng-if="main.isLoggedIn()"><a ui-sref="papersEdit" ui-sref-active="active">Paper Edit</a></li>
+        <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersShow" ui-sref-active="active">Paper Show</a></li> -->
+        <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersEdit" ui-sref-active="active">Paper Edit</a></li> -->
         <li ng-if="main.isLoggedIn()"><a ng-click="main.logout()">Logout</a></li>
+        <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersCreate">Create a Paper</a></li> -->
       </ul>
     </nav>
 

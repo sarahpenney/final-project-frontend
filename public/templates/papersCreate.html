@@ -1,0 +1,13 @@
+<h1>Paper Creating</h1>
+
+<form ng-submit="papersCreate.create()">
+  <label>Title
+    <input ng-model="papersCreate.paper.title" placeholder="Paper Title">
+  </label>
+
+  <label>Body
+    <input ng-model="papersCreate.paper.body" placeholder="Body">
+  </label>
+
+  <button type='submit'>Create</button>
+</form>
