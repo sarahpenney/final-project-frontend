@@ -1,12 +1,39 @@
-<h1>Edit Paper</h1>
+<section ng-class="main.cssStyle" class="new-stuff">
+<div class="container">
+<h1 class="papersIndexTitle">Edit Paper</h1>
+
 
 <form ng-submit="papersEdit.update()">
-  <label>Title
-    <input ng-model="papersEdit.paper.title">
+  <label>
+    <input ng-model="papersEdit.paper.title" placeholder="Paper Title" class="paperTitle">
+  </label>
+  <br>
+  <label>
+    <input ng-model="papersEdit.paper.body" placeholder="" class="paperBody">
   </label>
 
-  <label>Body
-    <input ng-model="papersEdit.paper.body">
-  </label>
-  <button type='submit'>Update</button>
+  <button type='submit' class="buttonStyle" id="createButton">Update</button>
 </form>
+<div class="container"></div>
+<div class="underlineCreate"></div>
+</section>
+
+
+<section class="old-stuff">
+  <div>
+  <h1 class="pageTitle">New Paper</h1>
+
+
+  <form ng-submit="papersEdit.update()">
+    <label>
+      <input ng-model="papersEdit.paper.title" placeholder="Paper Title">
+    </label>
+    <br>
+    <label>
+      <input ng-model="papersEdit.paper.body" placeholder="" class="bodyInput">
+    </label>
+
+    <button type='submit'>Update</button>
+  </form>
+  <img src="http://67.media.tumblr.com/tumblr_m914mhFD7N1qdou7bo1_400.gif" alt=""><img src="http://67.media.tumblr.com/tumblr_m914mhFD7N1qdou7bo1_400.gif" alt=""><img src="http://67.media.tumblr.com/tumblr_m914mhFD7N1qdou7bo1_400.gif" alt=""><img src="http://67.media.tumblr.com/tumblr_m914mhFD7N1qdou7bo1_400.gif" alt="">
+</section>

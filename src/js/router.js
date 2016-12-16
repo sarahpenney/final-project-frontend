@@ -54,6 +54,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/papersEdit.html',
       controller: 'PapersEditController as papersEdit'
     })
+    .state('mobileFriendly', {
+      url: '/mobileFriendly',
+      templateUrl: 'templates/mobileFriendly.html'
+      // controller: 'PapersEditController as papersEdit'
+    })
     .state('papersIndex', {
       url: '/papers?organismId',
       templateUrl: 'templates/papersIndex.html',

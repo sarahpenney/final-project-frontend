@@ -7,12 +7,17 @@ function MainController($auth, $state, $rootScope) {
 
   main.isLoggedIn = $auth.isAuthenticated;
   main.message = null;
+  main.cssStyle = 'new';
 
   function logout() {
     $auth.logout()
     .then(() => {
       $state.go('login');
     });
+  }
+
+  function toggleStyle() {
+    main.cssStyle = main.cssStyle === 'old' ? 'new' : 'old';
   }
 
   const protectedStates = ['usersEdit', 'usersNew'];
@@ -32,4 +37,5 @@ function MainController($auth, $state, $rootScope) {
   $rootScope.$on('$stateChangeStart', secureState);
 
   main.logout = logout;
+  main.toggleStyle = toggleStyle;
 }

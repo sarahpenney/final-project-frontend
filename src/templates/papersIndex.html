@@ -1,3 +1,4 @@
+<section ng-class="main.cssStyle" class="new-stuff">
 <div class="container">
   <h1 class="papersIndexTitle">Papers Index</h1>
 
@@ -16,3 +17,32 @@
 </div>
 <a ui-sref="papersCreate" class="createPaperLink">Create Paper</a>
 <div class="underline"></div>
+</section>
+
+
+
+
+
+
+<section class="old-stuff">
+<img src="https://media.giphy.com/media/7LkN1tcGazSqk/giphy.gif" class="bannerShrooms"><img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/shroom_zpsahma8mpu.jpg" class="bannerShrooms""><img src="https://media.giphy.com/media/7LkN1tcGazSqk/giphy.gif" class="bannerShrooms"><img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/shroom_zpsahma8mpu.jpg" class="bannerShrooms"">
+  <div>
+    <h1 class="pageTitle">Papers Index</h1>
+    <br>
+    <a ui-sref="papersCreate" class="createPaperOld">Create Paper</a>
+
+    <section>
+      <ul class="splitList">
+        <li ng-repeat="paper in papersIndex.all">
+          <div>
+            <h2>{{ paper.title }}</h2>
+            <p ui-sref="papersShow({id: paper.id })" class="readMoreOld">Read more</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <div></div>
+</section>

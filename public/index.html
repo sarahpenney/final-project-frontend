@@ -9,8 +9,10 @@
     <script src="/js/app.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
-  <body ng-controller="MainController as main">
+  <body ng-controller="MainController as main" ng-class="main.cssStyle">
 
+
+<div class="visibledesktop">
     <nav>
       <ul>
         <!-- <li><a ui-sref="usersIndex" ui-sref-active="active">Users</a></li> -->
@@ -21,11 +23,27 @@
         <li ng-if="main.isLoggedIn()"><a ui-sref="papersIndex" ui-sref-active="active">Papers Index</a></li>
         <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersShow" ui-sref-active="active">Paper Show</a></li> -->
         <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersEdit" ui-sref-active="active">Paper Edit</a></li> -->
+        <!-- <li><a ui-sref="mobileFriendly">Mobile</a></li> -->
         <li ng-if="main.isLoggedIn()"><a ng-click="main.logout()">Logout</a></li>
+        <li>
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch" ng-click="main.toggleStyle()">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+        </li>
         <!-- <li ng-if="main.isLoggedIn()"><a ui-sref="papersCreate">Create a Paper</a></li> -->
       </ul>
     </nav>
+  </div>
+
+  <div class="visibledevice">
+    <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/mobileFriendly_zpsk5lgkcwj.gif" class="mobileFriendlyJelly">
+  </div>
 
     <main ui-view></main>
   </body>
+
 </html>

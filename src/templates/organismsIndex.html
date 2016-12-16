@@ -1,4 +1,4 @@
-<section>
+<section ng-class="main.cssStyle" class="new-stuff">
 
 <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/BioFamily_zps01vuaoyi.jpg" class="backgroundImg" />
 
@@ -21,5 +21,48 @@
   <h4>Genus: {{ organismsIndex.organism.genus }}</h4> -->
   <!-- <p>{{ organismsIndex.organism.body }}</p> -->
 </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="old-stuff">
+  <!-- background image -->
+  <!-- <div class="leftBlock"> -->
+  <div>
+    <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/bioBack_zpsk1kwrjvs.jpg" alt="">
+
+    <!-- Giphy magic -->
+    <!-- <img src="https://www.hakaimagazine.com/sites/default/files/twitter-bioluminescence_0.jpg" class="jellyfish"> -->
+    <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/static1.squarespace_zpsf9kf4cwi.gif" class="jellyGif1">
+    <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/static1.squarespace_zpsf9kf4cwi.gif" class="jellyGif2">
+    <img src="http://i1159.photobucket.com/albums/p624/sarahpenneyuk/static1.squarespace_zpsf9kf4cwi.gif" class="jellyGif3">
+    <img src="http://orig07.deviantart.net/7b32/f/2015/157/3/7/neon_tetra_by_tepuitrouble-d8w79y4.gif" class="fish1">
+    <img src="http://orig07.deviantart.net/7b32/f/2015/157/3/7/neon_tetra_by_tepuitrouble-d8w79y4.gif" class="fish2">
+    <img src="http://orig07.deviantart.net/7b32/f/2015/157/3/7/neon_tetra_by_tepuitrouble-d8w79y4.gif" class="fish3">
+    <img src="http://orig07.deviantart.net/5916/f/2013/313/9/f/pixel_squid_by_mantisverde-d6tm2ql.gif" class="squidGif">
+  </div>
+
+  <div class="rightBlock">
+    <h1 class="pageTitle"> ORGANISMS </h1>
+    <!-- <ul class="ulOfOrganisms"> -->
+    <ul class="splitList">
+      <li ui-sref="papersIndex({ organismId: organism.id })" ng-repeat="organism in organismsIndex.all">
+        <a class="organismLinks">&#9679;{{ organism.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+<!-- <ul class="ulOfOrganisms">
+   <li ui-sref="papersIndex({ organismId: organism.id })" ng-repeat="organism in organismsIndex.all">
+     <a class="organismLinks">&#9679;{{ organism.name }}</a>
+   </li>
+ </ul> -->
+
 
 </section>

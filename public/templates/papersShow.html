@@ -1,8 +1,33 @@
-<h5>Paper Title:</h5> <h3><strong>{{ papersShow.paper.title }}</strong></h3>
+<section ng-class="main.cssStyle" class="new-stuff">
+<div class="container">
+<h3 class="papersIndexTitle"><strong>{{ papersShow.paper.title }}</strong></h3>
 
-<p>{{ papersShow.paper.body }}</p>
-
+<p class="textBodyWidth">{{ papersShow.paper.body }}</p>
+<br>
 <p>Author: <strong>{{ papersShow.paper.user.username }}</strong></p>
 
-<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ui-sref="papersEdit({id: papersShow.paper.id })">Edit Paper</button>
-<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ng-click="papersShow.deletePaper()">Delete Paper</button>
+<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ui-sref="papersEdit({id: papersShow.paper.id })" class="buttonStyle">Edit</button>
+<br>
+<button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ng-click="papersShow.deletePaper()" class="buttonStyle" id="buttonStyleDelete">Delete</button>
+
+<div class="underlineShow"></div>
+</section>
+
+
+
+
+
+<section class="old-stuff">
+  <div>
+  <h3><strong>{{ papersShow.paper.title }}</strong></h3>
+
+  <p>{{ papersShow.paper.body }}</p>
+  <br>
+  <p>Author: <strong>{{ papersShow.paper.user.username }}</strong></p>
+
+  <button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ui-sref="papersEdit({id: papersShow.paper.id })">Edit</button>
+  <br>
+  <button ng-show="papersShow.paper.user.id == papersShow.currentUser.id" ng-click="papersShow.deletePaper()">Delete</button>
+
+<img src="http://66.media.tumblr.com/1d3125446e250f891d13f979ed19a1a9/tumblr_nd2u0rxvpA1r6oew5o1_500.gif" class="wobbleMan">
+</section>
